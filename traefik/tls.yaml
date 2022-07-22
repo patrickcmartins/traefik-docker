@@ -1,10 +1,10 @@
 http:
     routers:
         insecurerouter:
-            rule: "Host(`apoio.botflix.net`)"
+            rule: "Host(`your.domain.com`)"
             service: apoioBackend
         allbackendrouter:
-            rule: "Host(`apoio.botflix.net`)"
+            rule: "Host(`your.domain.com`)"
             service: apoioBackend
             tls:
                 certResolver: letsencrypt
@@ -17,7 +17,7 @@ http:
                     interval: 10s
                     timeout: 3s
                 servers:
-                    - url: "http://187.62.205.28:4027/"
+                    - url: "http://IPORDOMAIN:PORT/"
 
 tls:
     options:

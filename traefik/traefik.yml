@@ -8,7 +8,7 @@ entryPoints:
 certificatesResolvers:
     letsencrypt:
         acme:
-            email: leandro@apoioassistencia24horas.com.br
+            email: your@email.com
             storage: acme.json
             httpChallenge:
                 entryPoint: insecure
