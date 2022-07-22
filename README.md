@@ -3,7 +3,7 @@ Simple traefik with file as provider.
 
 If you dont have dockerinstalled, do it with this commands:
 
-<pre> wget get.docker.com -O docker.sh | bash - </pre>
+<pre> wget get.docker.com -O docker.sh | bash docker.sh </pre>
 
 
 To install docker-compose use this:
