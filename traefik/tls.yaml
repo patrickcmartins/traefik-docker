@@ -5,15 +5,15 @@ http:
             service: apoioBackend
         allbackendrouter:
             rule: "Host(`your.domain.com`)"
-            service: apoioBackend
+            service: allBackend
             tls:
                 certResolver: letsencrypt
                 options: tlsoptions
     services:
-        apoioBackend:
+        allBackend:
             loadBalancer:
                 healthCheck:
-                    path: /botflix/login/
+                    path: /test
                     interval: 10s
                     timeout: 3s
                 servers:
