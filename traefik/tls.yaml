@@ -1,0 +1,25 @@
+http:
+    routers:
+        insecurerouter:
+            rule: "Host(`apoio.botflix.net`)"
+            service: apoioBackend
+        allbackendrouter:
+            rule: "Host(`apoio.botflix.net`)"
+            service: apoioBackend
+            tls:
+                certResolver: letsencrypt
+                options: tlsoptions
+    services:
+        apoioBackend:
+            loadBalancer:
+                healthCheck:
+                    path: /botflix/login/
+                    interval: 10s
+                    timeout: 3s
+                servers:
+                    - url: "http://187.62.205.28:4027/"
+
+tls:
+    options:
+        tlsoptions:
+            minVersion: VersionTLS12
