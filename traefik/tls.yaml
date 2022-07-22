@@ -1,3 +1,4 @@
+#Dynamic configuration
 http:
     routers:
         insecurerouter:
