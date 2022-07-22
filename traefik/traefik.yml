@@ -13,9 +13,7 @@ certificatesResolvers:
             httpChallenge:
                 entryPoint: insecure
             
-#traefikdemo.ddns.net
 providers:
-   # Enable the file provider to define routers / middlewares / services in file
    file:
       filename: /etc/traefik/tls.yaml
       watch: true

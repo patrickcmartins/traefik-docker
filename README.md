@@ -1,7 +1,7 @@
-# traefik docker
+# Traefik docker
 Simple traefik with file as provider.
 
-If you dont have dockerinstalled, do it with this commands:
+If you dont have docker installed, do it with this command:
 
 <pre> wget get.docker.com -O docker.sh | bash docker.sh </pre>
 
