@@ -8,7 +8,7 @@ If you dont have docker installed, run this command:
 
 To install docker-compose run:
 
-<pre> curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose </pre>
+<pre>  curl -fsSL "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose ; chmod +x !$ </pre>
 
 Then run:
 <pre> docker-compose up -d </pre>
